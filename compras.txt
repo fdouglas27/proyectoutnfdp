@@ -1,3 +1,5 @@
 Bananas
 Peras
 Manzanas
+Cebollas
+Ajo
