@@ -1,12 +1,87 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="with-device-with, initial-scale-1.0">
+    <title> Carga tu CV </title>
+    <link rel="stylesheet" href="m1u4.css">
 </head>
-<body>
-    
-</body>
+<!--Esto es un comentario, ojo que se pueden ver en el analisis de datos posterior-->
+
+<!--<body background="fondo-arco-iris-degradado_1159-31590.jpg">-->
+
+    <body>
+        <section>
+            <div>
+                <form action="" method="">
+                    <p>
+                        <label for="nom">
+                            <h1>Nombre y Apellido</h1>
+                        </label>
+                        <input type="text" name="Nombre" placeholder="Nombre" />
+                        <input type="text" name="apellido" placeholder="Apellido" />
+                    </p>
+
+                </form>
+            </div>
+        </section>
+        <aside>
+            <img src="Dipper.jpg" alt="Imagen CV">
+            <div>
+                <form action="" method="">
+
+                    <p>
+                        <label for="edad">Edad</label>
+                        <input type="text" name="edad" placeholder="Edad" />
+                    </p>
+
+                    <p>
+                        <label for="dom">Domicilio</label>
+                        <input type="text" name="dom" placeholder="Domicilio" />
+                    </p>
+
+                    <p>
+                        <label for="series">Que series te gustan?</label>
+                        <select name="series">
+                            <option value="accion">Accion</option>
+                            <option value="comedia">Comedia</option>
+                            <option value="romance">Romance</option>
+                            <option value="terror">Terror</option>
+                            <option value="anime">Anime</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="pelis">Que peliculas son las que mas te gustanron?</label>
+                        <select name="pelis">
+                            <option value="lista">La lista de Schindler</option>
+                            <option value="terminator">Terminator</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="perfil">Perfil</label>
+                    <p></p>
+                    <textarea name="perfil" id="perfil" cols="100" rows="10" style="resize: both;"
+                        placeholder="Complete su perfil"></textarea>
+                    </p>
+
+                    <p> Si queres contactarme podes completar el siguiente formulario <a href="FormularioPaginaCV.html"
+                            target="_blank">AQUI</a></p>
+
+                    <p>
+                        <input type="submit" value="enviar">
+                        <input type="reset" value="borrar">
+                    </p>
+
+                </form>
+            </div>
+        </aside>
+    </body>
+
+
+<!--</body>-->
+
 </html>
