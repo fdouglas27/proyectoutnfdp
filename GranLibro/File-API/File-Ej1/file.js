@@ -1,0 +1,44 @@
+// var cajadatos;
+// function iniciar() {
+//     cajadatos = document.getElementById("cajadatos");
+//     var archivos = document.getElementById("archivos");
+//     archivos.addEventListener("change", procesar);
+// }
+// function procesar(evento) {
+//     var archivos = evento.target.files;
+//     var archivo = archivos[0];
+//     var lector = new FileReader();
+//     lector.addEventListener("load", mostrar);
+//     lector.readAsText(archivo);
+// }
+// function mostrar(evento) {
+//     var resultado = evento.target.result;
+//     cajadatos.innerHTML = resultado;
+// }
+// window.addEventListener("load", iniciar);
+
+var cajadatos;
+function iniciar() {
+    cajadatos = document.getElementById("cajadatos");
+    var archivos = document.getElementById("archivos");
+    archivos.addEventListener("change", procesar);
+}
+function procesar(evento) {
+    var archivos = evento.target.files;
+    cajadatos.innerHTML = "";
+    var archivo = archivos[0];
+    if (!archivo.type.match(/image.*/i)) {
+        alert("Insertar una imagen");
+    } else {
+        cajadatos.innerHTML += "Nombre: " + archivo.name + "<br>";
+        cajadatos.innerHTML += "Tamaño: " + archivo.size + " bytes<br>";
+        var lector = new FileReader();
+        lector.addEventListener("load", mostrar);
+        lector.readAsDataURL(archivo);
+    }
+}
+function mostrar(evento) {
+    var resultado = evento.target.result;
+    cajadatos.innerHTML += '<img src="' + resultado + '">';
+}
+window.addEventListener("load", iniciar);
