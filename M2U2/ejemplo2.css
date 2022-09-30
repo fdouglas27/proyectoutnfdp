@@ -1,0 +1,65 @@
+#caja {
+    /* display: flex;
+    flex-direction: column;
+    justify-content:stretch;
+    justify-items: right;
+    align-items: flex-end;
+    justify-content:space-evenly;
+    justify-content: ;
+    border: 1px;
+    background-color: #cccccc;
+    margin: auto;
+    width: 700px;
+    height: 500px; */
+
+
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content:center;
+  align-content: stretch;
+  align-items: center;
+  background: white;
+  /* margin: auto; */
+  height: 500px;
+  width: fit-content;
+  border: black;
+  border-style: solid;
+  
+}
+
+#ItemRojo {
+    /* position: absolute; */
+    /* align-self:stretch ; */
+    display: flex;
+    color: white;
+    background-color: #ff0000;
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+}
+
+#ItemAzul {
+    /* position: absolute; */
+    /* align-self:stretch ; */
+    display: flex;
+    color: white;
+    background-color: #0000FF;
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+}
+
+#ItemVerde {
+    /* position: absolute; */
+    /* align-self:stretch ; */
+    display: flex;
+    color: white;
+    background-color: #00FF00;
+    width: 150px;
+    height: 150px;
+    /* align-content: center; */
+    align-items: center;
+    justify-content: center;
+}
