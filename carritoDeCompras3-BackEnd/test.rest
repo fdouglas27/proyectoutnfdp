@@ -1,0 +1,45 @@
+GET http://localhost:3000/
+//nos devuelve en la dcha "home!" porque es lo que tenemos en el home del archivo app.js
+
+###
+
+GET  http://localhost:3000/items/
+
+###
+
+GET  http://localhost:3000/items/item
+Content-Type: application/json
+
+{
+"itemId": "633f35bb80cd447d7dd8e300"
+}
+
+###
+
+GET  http://localhost:3000/img/pokemon-rojo.jpg
+
+###
+
+POST  http://localhost:3000/items
+Content-Type: application/json
+
+{
+    "title": "Sonic",
+    "price": 6.99,
+    "image": "sonic.jpg"
+}
+
+###
+
+###
+POST http://localhost:3000/create/
+Content-Type: application/json
+
+[
+    {
+        "id": "633f8b41c48234ed1e1e2df6",
+        "qty": 2
+    }
+]
+
+###
