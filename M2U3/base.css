@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+body {
+    /* color: rgb(179, 65, 31); */
+    background: #332F29;
+    font-size: 100%;
+}
+
+.container {
+    width: 800px;
+    color: rgb(241, 68, 68);
+    background: rgb(136, 139, 139);
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+}
+
+nav {
+    background: rgb(172, 71, 150);
+    color:aquamarine;
+    float: left;
+    width: 160px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: beige;
+    text-decoration: none;
+}
+
+.content {
+    background: rgb(115, 20, 240);
+    float: left;
+    margin: 0 0 0 25px;
+    width: 400px;
+}
+
+aside {
+    background: rgb(179, 222, 228);
+    color: blueviolet;
+    float: right;
+    width: 190px;
+}

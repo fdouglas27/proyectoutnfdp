@@ -1,0 +1,42 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    background: burlywood;
+    width: 100%;
+}
+
+nav {
+    background: beige;
+    float: none;
+    width: 100%;
+}
+
+nav ul {
+    margin: 0;
+}
+
+nav ul li a {
+    padding: 0.5em;
+    /* display: block; */
+    color: brown;
+}
+
+.content {
+    border-top: solid violet 0.1em;
+    float: none;
+    margin: 0;
+    padding: 0.9em;
+    width: 100%;
+    /* display: block; */
+}
+
+aside {
+    border-top: solid black 0.1em;
+    float: none;
+    padding: 0.8em;
+    width: 100%;
+    margin-left: 0;
+}

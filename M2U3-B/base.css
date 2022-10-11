@@ -1,0 +1,133 @@
+body {
+    color: black;
+    background: #332f29;
+    font-size: 100%;
+}
+
+.container {
+    width: 800px;
+    background: #8fa68e;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+nav {
+    background: #cc3910;
+    float: left;
+    width: 160px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: #f1f2c0;
+    text-decoration: none;
+}
+
+.content {
+    background: #f1f2c0;
+    float: left;
+    margin: 0 0 0 25px;
+    width: 400px;
+
+}
+
+aside {
+    background: #CCC59e;
+    float: right;
+    width: 190px;
+}
+
+@media screen and (min-width: 230px) and (max-width: 800px) {
+
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .container {
+        background: #8fa57e;
+        width: 100%;
+    }
+
+    nav {
+        background: orange;
+        float: none;
+        width: 100%;
+
+    }
+
+    nav ul {
+        margin: 0;
+    }
+
+    nav ul li a {
+        padding: 0.5em;
+        display: block;
+        color: black;
+    }
+
+    .content {
+        border-top: solid black 0.1em;
+        float: none;
+        padding: 0.8em;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    aside {
+        border-top: solid black 0.1em;
+        float: none;
+        padding: 0.8em;
+        width: 100%;
+        margin-left: 0; 
+    }
+}
+
+@media screen and (max-width: 229px) {
+
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .container {
+        background: #71c72f;
+        width: 100%;
+    }
+
+    nav {
+        background: rgb(54, 108, 158);
+        float: none;
+        width: 100%;
+
+    }
+
+    nav ul {
+        margin: 0;
+    }
+
+    nav ul li a {
+        padding: 0.5em;
+        display: block;
+        color: black;
+    }
+
+    .content {
+        border-top: solid black 0.1em;
+        float: none;
+        padding: 0.8em;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    aside {
+        border-top: solid black 0.1em;
+        float: none;
+        padding: 0.8em;
+        width: 100%;
+        margin-left: 0; 
+    }
+}
