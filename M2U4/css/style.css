@@ -1,0 +1,20 @@
+.contenedor {
+    color: rgb(103, 231, 103);
+    background-color: rgb(165, 129, 75);
+}
+
+.columna:nth-child(1) {
+    background-color: rgb(167, 142, 226);
+}
+
+.columna:nth-child(2) {
+    background-color: rgb(151, 226, 132);
+}
+
+.columna:nth-child(3) {
+    background-color: rgb(204, 103, 103);
+}
+
+.encabezado {
+    background-color: rgb(214, 122, 194);
+}
