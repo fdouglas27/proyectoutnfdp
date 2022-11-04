@@ -26,5 +26,5 @@ if (numeroMayor < varNumero) {
 }
 });
 
-document.write(`El numero mayor es ${numeroMayor}`)
+document.write(`El numero mayor es ${numeroMayor} y sumados dan un total de ${suma}.`)
 
