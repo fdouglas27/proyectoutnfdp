@@ -10,7 +10,10 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
 }
+
+/*?HEADER*/
 
 header {
   background-color: #2e64a1;
@@ -67,6 +70,8 @@ nav ul li a:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+/*?FOOTER*/
+
 footer {
   background-color: #ccc;
   /*que hace clear??*/
@@ -77,11 +82,14 @@ footer {
   margin-top: 20px;
 }
 
+/*?NAV*/
+
 nav ul li a.activo {
   color: blue;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+/*?MAIN*/
 .holder {
   max-width: 960px;
   margin: 0 auto;
@@ -98,12 +106,15 @@ main.holder div.img-container img {
   width: 100%;
   height: 20rem;
   object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 5px 5px 2px 1px #a6c0ee54;
 }
 
 .bienvenidos {
   width: 75%;
   padding-right: 10px;
   box-sizing: border-box;
+
 }
 
 .testimonios {
@@ -113,15 +124,18 @@ main.holder div.img-container img {
 .columnas {
   display: flex;
   justify-content: space-between;
+  gap: 2rem;
 }
 
 .bienvenidos p {
-  font-size: 20px;
+  font-size: 1rem;
+  text-align: justify;
 }
 
 .testimonio {
-  background-color: #ccc;
+  background-color: rgba(207, 238, 240, 0.402);
   padding: 16px;
+  border-radius: 25%;
 }
 
 .testimonio .cita {
@@ -144,14 +158,14 @@ main.holder div.img-container img {
   font-size: 12px;
 }
 
-.staff {
+/* .staff {
   border: 4px dotted blue;
-}
+} */
 
 .personas {
   display: flex;
   justify-content: space-between;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 .persona {
@@ -240,6 +254,10 @@ main.holder div.img-container img {
 
 /*?GALERIA*/
 
+.galery {
+  height: 65vh;
+}
+
 .galeria {
   display: flex;
   flex-wrap: wrap;
@@ -247,17 +265,33 @@ main.holder div.img-container img {
 }
 
 .galeria img {
-  width: 18%;
+  width: 20%;
+  height: auto;
   border: 1px solid #ddd;
   padding: 0.3rem;
   box-sizing: border-box;
   margin-bottom: 20px;
   margin-right: 2%;
+  border-radius: 20px;
+  box-shadow: 1px 1px 2px 2px #9dc2eb85;
+  transition: all 0.5s;
+}
+
+.galeria img:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 10px rgba(57, 56, 56, 0.5);
 }
 
 /*?NOVEDADES*/
 
+.novedades {
+  height: 65vh;
+}
+
 /*?CONTACTO*/
+
+
+
 .contacto {
   display: flex;
   gap: 24px;
@@ -294,9 +328,35 @@ datos p {
   height: 150px;
 }
 
+.overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: none;
+}
+
+.overlay.is-active {
+  display: block;
+}
+
+input.is-active,
+textarea.is-active {
+  position: relative;
+  z-index: 3;
+}
+
+input.is-active {
+  position: relative;
+  z-index: 3;
+}
+
 .formulario input[type="submit"] {
   background: #6da9ed;
-  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   color: #fff;
   font-size: 1rem;
   padding: 6px 20px;
@@ -306,8 +366,6 @@ datos p {
   cursor: pointer;
 }
 
-.formulario input[type="submit"]:hover {
-  background: #2e64a1;
-}
-
-
+/* .formulario input[type="submit"]:hover {
+  background: ;
+} */

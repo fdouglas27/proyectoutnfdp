@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./js/contacto.js"></script>
     <title>Baby Travel</title>
     <link rel="shortcut icon" href="./img/logos/WhatsApp-Image-2022-10-21-at-11.34.39.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -41,42 +42,55 @@
     </nav>
 
     <main class="holder contacto">
-<div>
-<h2>Contacto Rápido</h2>
-<form action="" method="post" class="formulario">
-  <p>
-    <label for="nombre">Nombre</label>
-    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-  </p>
-  <p>
-    <label for="email">email</label>
-    <input type="email" name="email" id="email" placeholder="algo@algo.com">
-  </p>
-  <p>
-    <label for="telefono">Telefono</label>
-    <input type="tel" name="telefono" id="telefono" placeholder="2994775454">
-  </p>
-  <p>
-    <label for="mensaje">Mensaje</label>
-    <textarea name="mensaje" placeholder="Mensaje"></textarea>
-  </p>
-  <input type="submit" value="Enviar">
+      <div>
+      <h2>Contacto Rápido</h2>
+        <form action="./php/enviar.php" method="POST" class="formulario">
+          <p>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+          </p>
+          <p>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="algo@algo.com">
+          </p>
+          <p>
+            <label for="telefono">Telefono</label>
+            <input type="tel" name="telefono" id="telefono" placeholder="2994775454">
+          </p>
+          <p>
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" placeholder="mensaje" cols="20" rows="10"></textarea>
+          </p>
+  
+          <input type="submit" value="Enviar">
 
-</form>
-</div>
-        <div class="datos">
-          <h2>Otras vias de comunicación</h2>
-          <p>También puede comunicarse con nosotros usando los siguientes medios</p>
-          <ul>
-            <li>Telefono: 456789</li>
-            <li>Email: algo@algo.com</li>
-            <li>Facebook: fb:algo</li>
-            <li>Twitter: </li>
-            <li>LinkedIn: </li>
-          </ul>
-        </div>
+        </form>
+      </div>
+
+      <div class="datos">
+        <h2>Otras vias de comunicación</h2>
+        <p>También puede comunicarse con nosotros usando los siguientes medios</p>
+        <ul>
+          <li>Telefono: 456789</li>
+          <li>Email: algo@algo.com</li>
+          <li>Facebook: fb:algo</li>
+          <li>Twitter: </li>
+          <li>LinkedIn: </li>
+        </ul>
+      </div>
     </main>
+
+    <div class="overlay" id="overlay"></div>
 
     <footer> Diseñado por Federico Douglas Price - &copy;</footer>
   </body>
 </html>
+
+<!-- mail($para, $asunto, utf8_decode($message), $header);
+
+$host = $_SERVER['HTTP_HOST'];
+$ruta = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
+$html = 'index.html';
+$url = "http://$host$ruta/$html";
+
+header("Location: http://propositogeneral.000webhostapp.com/index.html"); -->
