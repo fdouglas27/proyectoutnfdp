@@ -37,7 +37,10 @@ header h1 {
 }
 
 header .holder img {
+  height: 100px;
+  width: 100px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 nav {

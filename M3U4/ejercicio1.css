@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body.red {
+    background: rgb(255,12,12);
+}
+
+body.green {
+    background: rgb(9, 226, 38);
+}
+
+body.blue {
+    background: rgb(17, 0, 255);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.tamano{
+    width: 200px;
+    height: 200px;
+}
+
+.red {
+    background: rgb(255,12,12);
+    border: none;
+}
+
+.green {
+    background: rgb(9, 226, 38);
+    border: none;
+}
+
+.blue {
+    background: rgb(17, 0, 255);
+    border: none;
+}
+
+/* .red button {
+    background: red;
+    border: none;
+} */
