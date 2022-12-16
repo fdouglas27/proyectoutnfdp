@@ -1,11 +1,36 @@
-<h1>{{title}}</h1>
-{{#if conocido}}
-<p>Welcome to {{title}}</p>
-{{/if}}
+<!DOCTYPE html>
+<html lang="en">
 
-{{#unless conocido}}
-<p>No te conozco</p>
-<form action="/ingresar" method="post">
-<input type="text" name="nombre"><button>Ingresar</button>
-</form>
-{{/unless}}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>{{title}}</h1>
+    {{#if mayor}}
+    <p>No puede ingresar al sitio dado que es menor de edad <a href="/salir">Salir</a></p>
+    {{else}}
+    {{#if conocido}}
+    <p>Bienvenido {{nombre}} <a href="/salir">Salir</a></p>
+    {{/if}}
+    {{/if}}
+
+    {{#unless conocido}}
+    <p>Ingrese sus datos por favor</p>
+    <form action="/ingresar" method="post">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" placeholder="Ingrese su nombre"> <br>
+        <label for="edad">Edad</label>
+        <input type="text" name="edad" placeholder="Ingrese su edad"> <br>
+        <button>Ingresar</button>
+    </form>
+    {{/unless}}
+
+</body>
+
+</html>
