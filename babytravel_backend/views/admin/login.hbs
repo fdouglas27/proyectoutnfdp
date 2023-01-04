@@ -1,1 +1,30 @@
-<h1>Pagina en construcción</h1>
+{{! la profe uso boostrap }}
+<div class="container" style="margin-top: 100px;">
+  <div class="row">
+    <form action="/admin/login" method="post">
+      <div class="mb-3 row">
+        <div class="col-sm-10">
+          <input
+            type="text"
+            name="usuario"
+            id="inputUser"
+            placeholder="Usuario"
+            class="form-control"
+          />
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <div class="col-sm-10">
+          <input
+            type="password"
+            class="form-control"
+            id="inputPassword"
+            placeholder="Contraseña"
+            name="password"
+          />
+        </div>
+      </div>
+      <button class="btn btn-primary">Ingresar</button>
+    </form>
+  </div>
+</div>
